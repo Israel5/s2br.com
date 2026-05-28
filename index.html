@@ -1,7 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <!-- Google tag (gtag.js) -->
+    <link rel="preconnect" href="https://www.googletagmanager.com">
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-FHE9LVS85Q"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
@@ -10,9 +14,11 @@
 
         gtag('config', 'G-FHE9LVS85Q');
     </script>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>S2BR · Bringing Communities Together</title>
+    <link rel="preload" as="image" href="./assets/images/side_image_01.jpg">
+    <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+    <meta name="theme-color" content="#28292a" media="(prefers-color-scheme: dark)">
 
     <!-- SEO -->
     <meta name="description" content="S2BR is the Brazilian community platform for Brazilians living around the world. Discover nearby stores, food, events, and services — wherever life takes you." />
@@ -26,22 +32,36 @@
     <meta property="og:url" content="https://s2br.com/" />
     <meta property="og:title" content="S2BR · Bringing Communities Together" />
     <meta property="og:description" content="S2BR is the Brazilian community platform for Brazilians living around the world. Discover nearby stores, food, events, and services — wherever life takes you." />
-    <meta property="og:image" content="https://s2br.com/assets/images/side_image_01.jpg" />
+    <meta property="og:image" content="https://s2br.com/assets/images/og_image.jpg" />
+    <meta property="og:image:alt" content="S2BR — Brazilian community platform" />
     <meta property="og:locale" content="en_US" />
     <meta property="og:locale:alternate" content="pt_BR" />
     <meta property="og:site_name" content="S2BR" />
 
     <!-- Twitter / X Card -->
-    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="S2BR · Bringing Communities Together" />
     <meta name="twitter:description" content="S2BR is the Brazilian community platform for Brazilians living around the world. Discover nearby stores, food, events, and services — wherever life takes you." />
-    <meta name="twitter:image" content="https://s2br.com/assets/images/side_image_01.jpg" />
+    <meta name="twitter:image" content="https://s2br.com/assets/images/og_image.jpg" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <style type="text/tailwindcss">
         @custom-variant dark (&:where(.dark, .dark *));
     </style>
     <link rel="stylesheet" href="./assets/css/stylesheet.css?v=20260527224330">
     <link rel="icon" type="image/svg+xml" href="./assets/images/s2br.svg?v=20260527224330">
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "S2BR",
+        "url": "https://s2br.com",
+        "logo": "https://s2br.com/assets/images/s2br.svg",
+        "description": "S2BR is the Brazilian community platform for Brazilians living around the world. Discover nearby stores, food, events, and services — wherever life takes you.",
+        "foundingDate": "2026"
+    }
+    </script>
+
     <script>
         const savedTheme = localStorage.getItem('theme');
         const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
@@ -58,8 +78,8 @@
 
             <!-- Logo -->
             <div class="flex-shrink-0">
-                <a href="#" title="" class="flex rounded outline-none focus:ring-1 focus:ring-gray-900 focus:ring-offset-2">
-                    <img class="w-auto h-16" src="./assets/images/s2br.svg?v=20260527224330" alt="" />
+                <a href="/" title="S2BR — Home" class="flex rounded outline-none focus:ring-1 focus:ring-gray-900 focus:ring-offset-2">
+                    <img class="w-auto h-16" src="./assets/images/s2br.svg?v=20260527224330" alt="S2BR" />
                 </a>
             </div>
 
@@ -82,7 +102,7 @@
                         <path stroke-linecap="round" stroke-linejoin="round" d="M21.752 15.002A9.72 9.72 0 0 1 18 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 0 0 3 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 0 0 9.002-5.998Z" />
                     </svg>
                 </button>
-                <a href="https://portal.s2br.com/portal" title="" target="_blank" class="px-3 py-1.5 text-sm font-bold text-white dark:text-gray-900 bg-gray-900 dark:bg-white border border-transparent rounded-xl hover:bg-gray-600 dark:hover:bg-zinc-100 font-pj focus:outline-none transition-all duration-200" role="button" data-i18n="login">
+                <a href="https://portal.s2br.com/" title="" target="_blank" rel="noopener noreferrer" class="px-3 py-1.5 text-sm font-bold text-white dark:text-gray-900 bg-gray-900 dark:bg-white border border-transparent rounded-xl hover:bg-gray-600 dark:hover:bg-zinc-100 font-pj focus:outline-none transition-all duration-200" role="button" data-i18n="login">
                     Business login
                 </a>
             </div>
@@ -108,7 +128,7 @@
                         <path stroke-linecap="round" stroke-linejoin="round" d="M21.752 15.002A9.72 9.72 0 0 1 18 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 0 0 3 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 0 0 9.002-5.998Z" />
                     </svg>
                 </button>
-                <a href="https://portal.s2br.com/portal" title="" target="_blank" class="px-5 py-2 text-base font-bold leading-7 text-white dark:text-gray-900 bg-gray-900 dark:bg-white border border-transparent rounded-xl hover:bg-gray-600 dark:hover:bg-zinc-100 font-pj focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900 transition-all duration-200" role="button" data-i18n="login">
+                <a href="https://portal.s2br.com/" title="" target="_blank" rel="noopener noreferrer" class="px-5 py-2 text-base font-bold leading-7 text-white dark:text-gray-900 bg-gray-900 dark:bg-white border border-transparent rounded-xl hover:bg-gray-600 dark:hover:bg-zinc-100 font-pj focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900 transition-all duration-200" role="button" data-i18n="login">
                     Business login
                 </a>
             </div>
@@ -163,7 +183,7 @@
                         id="hero-image"
                         class="relative w-full rounded-3xl"
                         src="./assets/images/side_image_01.jpg?v=20260527224330"
-                        alt=""
+                        alt="Brazilians around the world connecting through S2BR"
                 />
             </div>
         </div>
@@ -171,10 +191,7 @@
     <p data-i18n="footer_links" class="mt-8 text-xs text-gray-500 dark:text-zinc-400 font-inter text-center">Products · Services · News · Events · Social</p>
 </section>
 
-
-<!-- Footer Block Component -->
-
-<script src="./assets/js/main.js"></script>
+<script src="./assets/js/main.js?v=20260527224330"></script>
 
 </body>
 </html>
