@@ -8,7 +8,7 @@ const translations = {
         launching_on: 'Launching on',
         launch_date:  'September 7, 2026',
         footer_links: 'Products · Services · News · Events · Social',
-        login:        'Business login',
+        login:        'Partner Portal',
     },
     pt: {
         hero_title:   'Unindo comunidades.',
@@ -16,7 +16,7 @@ const translations = {
         launching_on: 'Lançamento em',
         launch_date:  '7 de setembro de 2026',
         footer_links: 'Produtos · Serviços · Notícias · Eventos · Social',
-        login:        'Acesso empresarial',
+        login:        'Portal de Parceiros',
     },
     fr: {
         hero_title:   'Rapprocher les communautés.',
@@ -24,7 +24,7 @@ const translations = {
         launching_on: 'Lancement le',
         launch_date:  '7 septembre 2026',
         footer_links: 'Produits · Services · Actualités · Événements · Social',
-        login:        'Accès entreprise',
+        login:        'Espace Partenaires',
     },
     es: {
         hero_title:   'Uniendo comunidades.',
@@ -32,7 +32,7 @@ const translations = {
         launching_on: 'Lanzamiento el',
         launch_date:  '7 de septiembre de 2026',
         footer_links: 'Productos · Servicios · Noticias · Eventos · Social',
-        login:        'Acceso empresarial',
+        login:        'Portal de Socios',
     },
 };
 
